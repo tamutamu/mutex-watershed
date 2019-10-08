@@ -484,7 +484,7 @@ struct MutexWatershed {
         action_counter = 0;
         error_count = 0;
         for (auto& e : edge_list) {
-            if (num_iterations != 0 and num_iterations <= action_counter)
+            if (num_iterations != 0 && num_iterations <= action_counter)
                 finished = false;
 
             if (!seen_actions(e)) {
